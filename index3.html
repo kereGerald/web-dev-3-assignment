@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Tech Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .media-section {
+            margin-bottom: 30px;
+        }
+
+        .registration-form {
+            background-color: #e8f4f8;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 20px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .list-section {
+            background-color: #fff3e6;
+            padding: 20px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Welcome to G-Tech Solutions</h1>
+
+<!-- Multimedia Section -->
+<div class="media-container">
+    <h2>Multimedia Elements</h2>
+    <p>Listen to our audio clip:</p>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <p>Watch our video:</p>
+    <video controls width="100%" poster="https://peach.blender.org/wp-content/uploads/bbb-splash.png">
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+</div>
+
+
+<!-- Registration Form -->
+<h2>Registration Form</h2>
+<form class="registration-form">
+  <fieldset>
+      <legend>Registration Form</legend>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required minlength="3">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="password">Password (8+ characters):</label>
+      <input type="password" id="password" name="password" 
+             required minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d).+$">
+      
+      <label for="birthdate">Birth Date:</label>
+      <input type="date" id="birthdate" name="birthdate" 
+             required min="1900-01-01" max="2023-12-31">
+      
+      <button type="submit">Register</button>
+  </fieldset>
+</form>
+
+<!-- Table -->
+
+        <!-- Table -->
+        <table>
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Department</th>
+                  <th>Role</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Gerald Mbira</td>
+                  <td>Engineering</td>
+                  <td>Mechanical Engineer</td>
+              </tr>
+              <tr>
+                  <td>Jasper louis</td>
+                  <td>Civil   Engineer</td>
+                  <td>Structural Engineer</td>
+              </tr>
+              <tr>
+                  <td>Sarah Kim</td>
+                  <td>Software Development</td>
+                  <td>Software Engineer</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+
+</body>
+</html>
